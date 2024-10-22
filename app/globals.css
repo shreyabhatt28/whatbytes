@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body {
+        @apply w-screen h-screen;
+    }
+
+}
+
+@layer components {
+    .sidebar-option{
+        @apply flex justify-center sm:justify-start items-center rounded-full p-2 hover:bg-purple-200 text-gray-500 font-bold hover:text-purple-500 cursor-pointer transition-colors ease-linear;
+    }
+
+    .modal-btn{
+        @apply font-bold text-[11px] transition-colors ease-linear w-20 pt-2 pb-2 rounded-lg text-white;
+    }
+
+    .modal-btn.cancel{
+        @apply bg-red-600 hover:bg-red-400;
+    }
+
+    .modal-btn.save{
+        @apply bg-green-600 hover:bg-green-400;
+    }
+}
